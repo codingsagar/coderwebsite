@@ -224,6 +224,9 @@ footer{
   .quotes p {
     width: 80vw;
   }
+  #timeh4{
+  font-weight:500;
+  }
 }
 @media (max-width:420px) {
   nav ul a{
