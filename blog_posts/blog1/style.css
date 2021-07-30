@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap");
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Josefin Sans;
+}
+
+:root {
+    --hacker-green: #17f178;
+    --selection-green: #81eeb1;
+    --website-black: rgb(39, 31, 31);
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    position: sticky;
+    top: 0;
+    background-color: var(--website-black);
+    color: var(--hacker-green);
+    line-height: 50px;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    color: var(--hacker-green);
+}
+
+.main h2{
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+.main p{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+#main-img{
+    border-radius: 2px;
+    margin: 50px 0;
+    width: 500px;
+}
+#codingblogs{
+    background-color: var(--hacker-green);
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+.writingblog p{
+    text-align: justify;
+    color: var(--website-black);
+}
+.writingblog{
+    width: 65vw;
+    margin: auto;
+}
+.writingblog h3{
+    margin: 20px 0;
+}
+::selection{
+    background-color: var(--selection-green);
+}
+::-moz-selection{
+    background-color: var(--selection-green);
+    padding:10px;
+}
+iframe{
+    margin: 20px auto;
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#last{
+    background-color: var(--hacker-green);
+    color: var(--website-black);
+}
+
+
+/* media queries */
+
+@media (max-width:600px) {
+    #main-img{
+        width: 85vw;
+        border-radius: 2px;
+    }
+    .main h2{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main p{
+        padding-left: 20px;
+    }
+    .writingblog{
+        width: 80vw;
+    }
+}
